@@ -1,1 +1,12 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>杭州市扫码通行</title><link href=./static/css/app.66d8f75c4feabb627249e19a644febe3.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.244eec27210d51c6cef9.js></script><script type=text/javascript src=./static/js/vendor.9147e3e695a073717f30.js></script><script type=text/javascript src=./static/js/app.b96cb342fbbcf66f6c5a.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>health_code</title><link href=./static/css/app.c5ddc0fc5735ebb19a7c94204c134854.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.06e67f72f9b412ddd6f5.js></script><script type=text/javascript src=./static/js/vendor.7c02377462f1290e0089.js></script><script type=text/javascript src=./static/js/app.71dd35c1df81922bd945.js></script></body></html><script>window.onload = function() {
+        document.addEventListener('touchstart', function(e) {
+            console.log("1",e.touches.length)
+            if (e.touches.length > 1) {
+                e.preventDefault()
+            }
+        })
+        document.addEventListener('gesturestart', function(e) {
+            console.log("2")
+            e.preventDefault()
+        })
+    }</script>
